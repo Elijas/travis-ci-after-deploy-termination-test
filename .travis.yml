@@ -7,4 +7,4 @@ script:
   - pytest
 
 after_script:
-  - if [ pytest -eq 0 ]; then travis_terminate 1; fi
+  - if [ ( pytest ) -eq 0 ]; then travis_terminate 1; fi

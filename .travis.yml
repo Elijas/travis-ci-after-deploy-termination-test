@@ -7,4 +7,4 @@ script:
   - echo Nothing happens here
 
 after_script: # implicit pytest result here is skipped (as is in after_deploy)
-  - if ! pytest; travis_terminate 1; fi
+  - if ! pytest; then travis_terminate 1; fi

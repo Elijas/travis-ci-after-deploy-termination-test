@@ -1,5 +1,6 @@
 import pytest
 
 
-def test_fail():
+def test_something():
     pytest.fail()
+    pass

@@ -1,7 +1,7 @@
 import pytest
 
 
-def test_travis_fail():
+def _test_travis_fail():
     pytest.fail()
 
 

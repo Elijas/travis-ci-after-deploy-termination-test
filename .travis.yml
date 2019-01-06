@@ -4,4 +4,4 @@ dist: xenial
 python: "3.7"
 
 script:
-  - pytest
+  - if [ pytest -eq 0 ]; then travis_terminate 1; fi

@@ -4,7 +4,7 @@ dist: xenial
 python: "3.7"
 
 script:
-  - echo skipped
+  - echo Nothing happens here
 
-after_script:
-  - pytest
+after_script: # implicit pytest result here is skipped (as is in after_deploy)
+  - if ! pytest; travis_terminate 1; fi

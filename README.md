@@ -3,7 +3,7 @@ Example of how to do additional tests after successful deployment
 In travis.yml:
 ```
 after_deploy:
-  - if ! pytest test_e2e/post_deploy_run.py; then travis_terminate 1; fi
+  - if ! ADD_TEST_SCRIPT_HERE; then travis_terminate 1; fi
 ```
 
 Proof that it works (the only diff being test failing/suceeding):
